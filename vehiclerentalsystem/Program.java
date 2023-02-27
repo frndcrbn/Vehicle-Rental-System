@@ -21,11 +21,11 @@ public class Program {
             switch (choice){
                 case 1:
                     System.out.println("#ADD VEHICLE");
-                    System.out.print("Enter type: ");
+                    System.out.print("Enter type:   ");
                     String type = scanner.next();
-                    System.out.print("Enter model: ");
+                    System.out.print("Enter model:  ");
                     String model = scanner.next();
-                    System.out.print("Enter year: ");
+                    System.out.print("Enter year:   ");
                     int year = scanner.nextInt();
                     scanner.nextLine();
                     company.addVehicle(new Vehicle(type, model, year));
@@ -33,18 +33,18 @@ public class Program {
                     break;
                 case 2:
                     System.out.println("#ADD CUSTOMER");
-                    System.out.print("Enter name: ");
+                    System.out.print("Enter name:       ");
                     String name = scanner.next();
-                    System.out.print("Enter address: ");
+                    System.out.print("Enter address:    ");
                     String address = scanner.next();
                     company.addCustomer(new Customer(name, address));
                     System.out.println("Customer added!");
                     break;
                 case 3:
                     System.out.println("#RENT VEHICLE");
-                    System.out.print("Enter type: ");
+                    System.out.print("Enter type:           ");
                     type = scanner.next();
-                    System.out.print("Enter model: ");
+                    System.out.print("Enter model:          ");
                     model = scanner.next();
                     System.out.print("Enter Customer(name): ");
                     name = scanner.next();
@@ -59,9 +59,9 @@ public class Program {
                     break;
                 case 4:
                     System.out.println("#RETURN VEHICLE");
-                    System.out.print("Enter type: ");
+                    System.out.print("Enter type:           ");
                     type = scanner.next();
-                    System.out.print("Enter model: ");
+                    System.out.print("Enter model:          ");
                     model = scanner.next();
                     System.out.print("Enter Customer(name): ");
                     name = scanner.next();
